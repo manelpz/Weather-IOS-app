@@ -175,8 +175,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwl-c9-nkd" userLabel="Button View">
                                 <rect key="frame" x="0.0" y="417" width="393" height="366"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-ws-Kkv">
+                                        <rect key="frame" x="122.66666666666669" y="169" width="148" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Get Weather">
+                                            <color key="titleShadowColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getWeatherPressed:" destination="fSy-WI-MlQ" eventType="touchUpInside" id="f9D-fF-8Mg"/>
+                                        </connections>
+                                    </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter City Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qio-0T-Uaq">
-                                        <rect key="frame" x="112.66666666666669" y="192" width="168" height="34"/>
+                                        <rect key="frame" x="112.66666666666669" y="123" width="168" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="SCR-uQ-q9h"/>
                                             <constraint firstAttribute="height" constant="34" id="bff-q7-oqI"/>
@@ -185,25 +197,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-ws-Kkv">
-                                        <rect key="frame" x="122.66666666666669" y="134" width="148" height="44"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Get Weather"/>
-                                        <connections>
-                                            <action selector="getWeatherPressed:" destination="fSy-WI-MlQ" eventType="touchUpInside" id="f9D-fF-8Mg"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="tintColor" systemColor="systemMintColor"/>
                                 <constraints>
-                                    <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="-27" id="5Od-se-biw"/>
+                                    <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="8" id="5Od-se-biw"/>
                                     <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerX" secondItem="Lwl-c9-nkd" secondAttribute="centerX" id="SzJ-tx-eXw"/>
-                                    <constraint firstItem="Qio-0T-Uaq" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="26" id="XDq-jS-1GK"/>
+                                    <constraint firstItem="Qio-0T-Uaq" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="-43" id="XDq-jS-1GK"/>
                                     <constraint firstItem="Qio-0T-Uaq" firstAttribute="centerX" secondItem="Lwl-c9-nkd" secondAttribute="centerX" id="XWp-3c-8Ls"/>
                                     <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerX" secondItem="Lwl-c9-nkd" secondAttribute="centerX" id="d9b-cD-9D4"/>
-                                    <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="-27" id="kUU-Ux-3ee"/>
+                                    <constraint firstItem="g3j-ws-Kkv" firstAttribute="centerY" secondItem="Lwl-c9-nkd" secondAttribute="centerY" constant="8" id="kUU-Ux-3ee"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -246,10 +248,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

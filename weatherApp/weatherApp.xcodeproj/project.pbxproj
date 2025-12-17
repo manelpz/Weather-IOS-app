@@ -65,15 +65,11 @@
 		};
 		139B42A92EB05A8F00488752 /* weatherAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = weatherAppTests;
 			sourceTree = "<group>";
 		};
 		139B42B32EB05A8F00488752 /* weatherAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = weatherAppUITests;
 			sourceTree = "<group>";
 		};
@@ -139,7 +135,6 @@
 				B1F4E3E9D17157DF36A67F9B /* Pods-weatherAppTests.debug.xcconfig */,
 				4DB5AB15025A473B47AC347F /* Pods-weatherAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -344,9 +339,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-weatherApp/Pods-weatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-weatherApp/Pods-weatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -361,9 +360,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-weatherApp-weatherAppUITests/Pods-weatherApp-weatherAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-weatherApp-weatherAppUITests/Pods-weatherApp-weatherAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +445,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = weatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need you location to obtain your current weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need you location to obtain your current weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -452,6 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = emma.weatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -470,6 +476,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = weatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need you location to obtain your current weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need you location to obtain your current weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -480,6 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = emma.weatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
