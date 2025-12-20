@@ -20,6 +20,7 @@ class weatherAppController: UIViewController, CLLocationManagerDelegate {
 
     //TODO: Declare instance variables here
     let locationManager = CLLocationManager()
+    let weatherDataModel = WeatherDataModel()
     
     @IBOutlet weak var weatherIcon: UIImageView!
     
@@ -51,14 +52,14 @@ class weatherAppController: UIViewController, CLLocationManagerDelegate {
     /***************************************************************/
     
     //Write the getWeatherData method here:
-    struct Main: Decodable {
+    /*struct Main: Decodable {
         let temp: Double
     }
     
     struct WeatherResponse: Decodable {
         let name: String
         let main: Main
-    }
+    }*/
     
     func getWeatherData(url: String, parameters: [String: Any]){
         
@@ -69,7 +70,8 @@ class weatherAppController: UIViewController, CLLocationManagerDelegate {
 
                 case .success(let value):
                     print(value)
-                //print(WeatherResponse.init(name: String, main: <#T##Main#>))
+                    self.updateWeatherData(value)
+                //print(WeatherResponse.init(name: String, main:    ))
                     // parsear JSON aquí
                     
 
@@ -89,7 +91,12 @@ class weatherAppController: UIViewController, CLLocationManagerDelegate {
    
     
     //Write the updateWeatherData method here:
-    
+    func updateWeatherData(_ weather : WeatherResponse){
+        print(weather)
+        weatherDataModel.temperature = Int(weather.main.temp - 273.15)
+        weatherDataModel.city = weather.name
+        weatherDataModel.condition = weather.weather[0].id
+    }
 
     
     
@@ -114,7 +121,8 @@ class weatherAppController: UIViewController, CLLocationManagerDelegate {
         let location = locations[locations.count-1]
         if location.horizontalAccuracy > 0 {
             locationManager.stopUpdatingLocation()
-            print("longitud \(location.coordinate.longitude) latitud \(location.coordinate.latitude)")
+            locationManager.delegate = nil
+            //print("longitud \(location.coordinate.longitude) latitud \(location.coordinate.latitude)")
             let latitude = location.coordinate.latitude
             let longitude = location.coordinate.longitude
             
