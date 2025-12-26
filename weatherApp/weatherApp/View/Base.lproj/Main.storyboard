@@ -27,7 +27,7 @@
                                         <rect key="frame" x="237" y="0.0" width="156" height="362"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEh-Zd-l5b" userLabel="Temperature Label">
-                                                <rect key="frame" x="52.666666666666686" y="146.66666666666666" width="91" height="69.000000000000028"/>
+                                                <rect key="frame" x="52.666666666666686" y="146.66666666666666" width="91" height="69"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-HU-kgP" userLabel="Center View">
                                 <rect key="frame" x="46" y="361" width="300" height="188"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SlX-4C-ZiK" userLabel="Weather Condition Image View">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy2" translatesAutoresizingMaskIntoConstraints="NO" id="SlX-4C-ZiK" userLabel="Weather Condition Image View">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="188"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <constraints>
@@ -247,6 +247,7 @@
     <resources>
         <image name="background" width="1024" height="1536"/>
         <image name="cityBackground" width="1024" height="1536"/>
+        <image name="cloudy2" width="64" height="64"/>
         <image name="left" width="32" height="32"/>
         <image name="switch" width="64" height="64"/>
         <namedColor name="AccentColor">
